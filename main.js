@@ -2,5 +2,5 @@
 document.getElementById("Magicbtn").addEventListener("click", Magic);
 
 function Magic() {
-  console.log;
+  alert("Click");
 }
