@@ -1,10 +1,11 @@
 // JavaScript Code
 document.getElementById("Magicbtn").addEventListener("click", Magic);
 document.getElementById("QBox");
-let Q = QBox;
+
 function Magic() {
   let randNum = Math.random();
   console.log(randNum);
+  let Q = document.getElementById("QBox").value;
 
   if (randNum < 0.05) {
     Answerid = "It is decidedly so.";
@@ -46,11 +47,9 @@ function Magic() {
     Answerid = "Outlook not so good.";
   } else if (randNum < 1) {
     Answerid = "Very doubtful.";
-  } else if (Q === "E") {
-    alert("EZ");
-  } else {
+  } else if (Q === " ") {
     Answerid = "Team Fortress 2";
   }
-  let AEL = Answerid;
-  document.getElementById("AEL").innerHTML = `Answer: ${AEL}`;
 }
+let AEL = Answerid;
+document.getElementById("AEL").innerHTML = `Answer: ${AEL}`;
